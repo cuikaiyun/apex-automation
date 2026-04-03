@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version 2>/dev/null; npm --version 2>/dev/null; npx --version 2>/dev/null)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm 2>&1)"
+    ]
+  }
+}
