@@ -17,11 +17,14 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("submitting");
 
-    // Placeholder: log to console. Replace with Formspree, Resend, or API route.
     try {
-      console.log("Contact form submission:", formData);
-      // Simulate a brief delay
-      await new Promise((resolve) => setTimeout(resolve, 500));
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error("Request failed");
       setStatus("success");
     } catch {
       setStatus("error");

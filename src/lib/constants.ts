@@ -3,7 +3,7 @@ export const SITE_TAGLINE =
   "Streamline Your Business with AI & Custom Software";
 export const SITE_DESCRIPTION =
   "We help small businesses save time and money by automating repetitive tasks with AI and custom software solutions.";
-export const CONTACT_EMAIL = "hello@apexautomation.com";
+export const CONTACT_EMAIL = "apexautomation2026@gmail.com";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
