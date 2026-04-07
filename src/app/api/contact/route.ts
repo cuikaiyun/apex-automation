@@ -15,7 +15,7 @@ export async function POST(request: Request) {
       );
     }
 
-    await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: `${SITE_NAME} <onboarding@resend.dev>`,
       to: CONTACT_EMAIL,
       replyTo: email,
@@ -32,6 +32,15 @@ export async function POST(request: Request) {
         .join("\n"),
     });
 
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json(
+        { error: error.message },
+        { status: 422 }
+      );
+    }
+
+    console.log("Email sent successfully:", data);
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Failed to send email:", error);
