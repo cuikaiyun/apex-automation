@@ -35,7 +35,10 @@ export default function ServiceCard({ service }: { service: Service }) {
       <p className="mt-2 text-sm leading-relaxed text-slate-600">
         {service.shortDescription}
       </p>
-      <span className="mt-4 inline-block text-sm font-medium text-blue-600 group-hover:text-blue-700">
+      <p className="mt-3 text-sm font-semibold text-emerald-600">
+        Starting at {service.startingPrice}
+      </p>
+      <span className="mt-3 inline-block text-sm font-medium text-blue-600 group-hover:text-blue-700">
         Learn more &rarr;
       </span>
     </Link>

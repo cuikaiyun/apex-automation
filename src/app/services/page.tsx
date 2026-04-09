@@ -13,7 +13,7 @@ import CTA from "@/components/CTA";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "AI chatbots, document processing, workflow automation, custom web apps, API integrations, and data entry automation for small businesses.",
+    "AI chatbots, document processing, workflow automation, custom web apps, API integrations, and data entry automation for small businesses in San Jose and the Bay Area.",
 };
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -64,6 +64,9 @@ export default function ServicesPage() {
                     </h2>
                     <p className="mt-4 leading-relaxed text-slate-600">
                       {service.fullDescription}
+                    </p>
+                    <p className="mt-4 text-sm font-semibold text-emerald-600">
+                      Starting at {service.startingPrice}
                     </p>
                   </div>
                 </div>

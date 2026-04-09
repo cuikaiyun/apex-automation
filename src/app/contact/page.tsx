@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Mail } from "lucide-react";
-import { CONTACT_EMAIL } from "@/lib/constants";
+import { Mail, MapPin } from "lucide-react";
+import { CONTACT_EMAIL, LOCATION } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch to discuss how we can help automate your business processes.",
+    "Get in touch to discuss how we can help automate your business processes. Based in San Jose, serving the Bay Area.",
 };
 
 export default function ContactPage() {
@@ -27,7 +27,7 @@ export default function ContactPage() {
           {/* Info */}
           <div className="md:col-span-2">
             <h2 className="text-xl font-semibold text-slate-900">
-              Get in Touch
+              Book a Free 30-min Consultation
             </h2>
             <p className="mt-3 text-slate-600">
               Whether you have a specific project in mind or just want to
@@ -35,14 +35,20 @@ export default function ContactPage() {
               Typical response time is within one business day.
             </p>
 
-            <div className="mt-8 flex items-center gap-3">
-              <Mail className="h-5 w-5 text-blue-600" />
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="text-sm text-slate-600 hover:text-blue-600"
-              >
-                {CONTACT_EMAIL}
-              </a>
+            <div className="mt-8 flex flex-col gap-4">
+              <div className="flex items-center gap-3">
+                <MapPin className="h-5 w-5 text-blue-600" />
+                <span className="text-sm text-slate-600">{LOCATION}</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail className="h-5 w-5 text-blue-600" />
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className="text-sm text-slate-600 hover:text-blue-600"
+                >
+                  {CONTACT_EMAIL}
+                </a>
+              </div>
             </div>
           </div>
 

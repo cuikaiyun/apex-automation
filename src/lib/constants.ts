@@ -2,8 +2,10 @@ export const SITE_NAME = "Apex Automation";
 export const SITE_TAGLINE =
   "Streamline Your Business with AI & Custom Software";
 export const SITE_DESCRIPTION =
-  "We help small businesses save time and money by automating repetitive tasks with AI and custom software solutions.";
+  "We help small businesses in San Jose and the Bay Area save time and money by automating repetitive tasks with AI and custom software solutions.";
 export const CONTACT_EMAIL = "apexautomation2026@gmail.com";
+export const LOCATION = "San Jose, CA";
+export const REGION = "Bay Area";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -17,6 +19,7 @@ export interface Service {
   shortDescription: string;
   fullDescription: string;
   icon: string;
+  startingPrice: string;
 }
 
 export const SERVICES: Service[] = [
@@ -28,6 +31,7 @@ export const SERVICES: Service[] = [
     fullDescription:
       "We build custom AI chatbots powered by modern large language models, tailored to your business. Whether you need a customer support bot on your website, an internal knowledge assistant for your team, or a lead qualification chatbot, we design and deploy solutions that work around the clock. Our chatbots integrate with your existing tools and learn from your data to provide accurate, helpful responses.",
     icon: "MessageSquare",
+    startingPrice: "$300",
   },
   {
     slug: "document-processing",
@@ -37,6 +41,7 @@ export const SERVICES: Service[] = [
     fullDescription:
       "Stop manually copying data from documents into spreadsheets. Our document processing solutions use AI to extract key information from invoices, receipts, contracts, and forms — then feed it directly into your accounting, CRM, or ERP system. We handle PDFs, scanned documents, emails, and more, with accuracy rates that match or exceed manual data entry.",
     icon: "FileSearch",
+    startingPrice: "$300",
   },
   {
     slug: "workflow-automation",
@@ -46,6 +51,7 @@ export const SERVICES: Service[] = [
     fullDescription:
       "We map out your existing workflows and identify bottlenecks where manual steps slow things down. Then we build automations using platforms like Zapier and Make for simpler flows, or fully custom solutions for complex processes. From automatic email follow-ups to multi-step approval workflows, we make sure your business runs smoothly without constant human intervention.",
     icon: "Workflow",
+    startingPrice: "$200",
   },
   {
     slug: "custom-web-apps",
@@ -55,6 +61,7 @@ export const SERVICES: Service[] = [
     fullDescription:
       "When off-the-shelf software doesn't fit, we build custom web applications tailored to your exact needs. Whether it's an inventory management dashboard, a client portal, a booking system, or an internal operations tool, we design and develop solutions that your team actually wants to use. Built with modern tech stacks for reliability, speed, and easy maintenance.",
     icon: "AppWindow",
+    startingPrice: "$300",
   },
   {
     slug: "api-integrations",
@@ -64,6 +71,7 @@ export const SERVICES: Service[] = [
     fullDescription:
       "Your tools should talk to each other. We build integrations between your CRM, accounting software, e-commerce platform, inventory system, and any other tools with an API. No more exporting CSVs and re-uploading data. We set up reliable, real-time data syncing so your systems stay in sync and your team spends less time on data entry.",
     icon: "Plug",
+    startingPrice: "$300",
   },
   {
     slug: "data-entry-automation",
@@ -73,6 +81,7 @@ export const SERVICES: Service[] = [
     fullDescription:
       "Data entry is one of the biggest time sinks for small businesses. We build solutions that capture data at the source — smart web forms, email parsers, barcode scanners, and automated data pipelines — so information flows directly into your systems without anyone having to type it in manually. Free your team to focus on work that actually requires human judgment.",
     icon: "Database",
+    startingPrice: "$100",
   },
 ];
 

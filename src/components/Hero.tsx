@@ -9,9 +9,9 @@ export default function Hero() {
           {SITE_TAGLINE}
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
-          We help small businesses eliminate repetitive tasks, connect their
-          tools, and build custom solutions — so you can focus on what matters
-          most.
+          We help small businesses in San Jose and the Bay Area eliminate
+          repetitive tasks, connect their tools, and build custom solutions — so
+          you can focus on what matters most.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
@@ -24,7 +24,7 @@ export default function Hero() {
             href="/contact"
             className="rounded-full border border-white/30 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
           >
-            Get in Touch
+            Book a Free 30-min Consultation
           </Link>
         </div>
       </div>

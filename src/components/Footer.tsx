@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NAV_LINKS, SITE_NAME, CONTACT_EMAIL } from "@/lib/constants";
+import { NAV_LINKS, SITE_NAME, CONTACT_EMAIL, LOCATION } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -39,6 +39,7 @@ export default function Footer() {
               Contact
             </h4>
             <div className="mt-4 flex flex-col gap-2 text-sm">
+              <span>{LOCATION}</span>
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
                 className="transition-colors hover:text-white"

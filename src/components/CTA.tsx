@@ -8,14 +8,14 @@ export default function CTA() {
           Ready to Automate?
         </h2>
         <p className="mt-4 text-lg text-slate-300">
-          Tell us about your business and the tasks you want to streamline.
-          We&apos;ll show you what&apos;s possible.
+          Book a free 30-minute consultation and we&apos;ll identify the top 3 tasks
+          you can automate right away.
         </p>
         <Link
           href="/contact"
           className="mt-8 inline-block rounded-full bg-emerald-500 px-8 py-3 text-sm font-semibold text-white shadow-lg transition-colors hover:bg-emerald-600"
         >
-          Start a Conversation
+          Book a Free 30-min Consultation
         </Link>
       </div>
     </section>

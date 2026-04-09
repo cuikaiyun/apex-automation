@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_NAME} — AI & Software Automation for Small Business`,
+    default: `${SITE_NAME} — AI & Software Automation for Small Business | San Jose, Bay Area`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,

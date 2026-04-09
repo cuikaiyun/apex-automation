@@ -36,7 +36,7 @@ export default function MobileNav() {
               onClick={() => setIsOpen(false)}
               className="rounded-full bg-blue-600 px-5 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-blue-700"
             >
-              Get Started
+              Free Consult
             </Link>
           </nav>
         </div>
